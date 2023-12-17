@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/MovieYou/static/css/main.5d466b36.css",
+    "main.js": "/MovieYou/static/js/main.757352e3.js",
+    "index.html": "/MovieYou/index.html",
+    "static/media/search.svg": "/MovieYou/static/media/search.db964b809d21320fb503cb05f4dc8a09.svg",
+    "main.5d466b36.css.map": "/MovieYou/static/css/main.5d466b36.css.map",
+    "main.757352e3.js.map": "/MovieYou/static/js/main.757352e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d466b36.css",
+    "static/js/main.757352e3.js"
+  ]
+}
