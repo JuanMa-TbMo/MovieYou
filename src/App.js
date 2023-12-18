@@ -14,7 +14,7 @@ const App=()=>{
 
 const searchMovies = async (title) => {
     var pageNum=1;
-    const response = await fetch(`${API_URL}&s=${title}&page{pageNum}`);
+    const response = await fetch(`${API_URL}&s=${title}`);
     const data= await response.json();
     setMovies(data.Search);
 
