@@ -4,27 +4,34 @@ import './App.css'
 import SearchIcon from './search.svg';
 import MovieCard from "./MovieCard";
 
+
 const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=cb158bd6';
-
-
+var pageNum=1;
+let pagCant=0;
+let totalPag;
 const App=()=>{
-
+    
     const [movies,setMovies]= useState([]);
     const [searchTerm,setSearchTerm]= useState('');
 
 const searchMovies = async (title) => {
-    var pageNum=1;
-    const response = await fetch(`${API_URL}&s=${title}`);
+    
+    const response = await fetch(`${API_URL}&s=${title}&page=${pageNum}`);
     const data= await response.json();
     setMovies(data.Search);
-
+      pagCant=data.totalResults;
+      totalPag=Math.floor(pagCant/10);
+      console.log(pagCant);
+      console.log(totalPag);
 }
 
     useEffect(()=>{
-        searchMovies('All');
+        searchMovies('Christmas');
 
     },[]);
+
     return(
+       
         <div className="app">
                 <h1>MovieYou</h1>
 
@@ -42,7 +49,9 @@ const searchMovies = async (title) => {
 
                      <img src={SearchIcon}
                      alt="search"
-                    onClick={() => searchMovies(searchTerm)}
+                    onClick={() => searchMovies(searchTerm)
+                    
+                    }
                   
                      />
 
@@ -57,7 +66,11 @@ const searchMovies = async (title) => {
                         <MovieCard movie={movie} /> 
                      
                     ))}
-                     <div className="reload"> <button> Reload</button> </div>
+                     <div className="reload">
+                      <button
+                       onClick={() => console.log(pagCant)}
+                      
+                      > Reload</button> </div>
                 </div>
             ):(
                 <div className="empty">
