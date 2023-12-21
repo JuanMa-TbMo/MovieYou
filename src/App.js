@@ -5,7 +5,7 @@ import SearchIcon from './search.svg';
 import MovieCard from "./MovieCard";
 
 
-const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=cb158bd6';
+const API_URL = 'https://www.omdbapi.com/?i=tt3896198&apikey=cb158bd6';
 var pageNum=1;
 let pagCant=0;
 let totalPag;
