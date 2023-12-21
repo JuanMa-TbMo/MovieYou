@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/MovieYou/static/css/main.5d466b36.css",
-    "main.js": "/MovieYou/static/js/main.67c2682c.js",
+    "main.css": "/MovieYou/static/css/main.c68b833f.css",
+    "main.js": "/MovieYou/static/js/main.2f354d64.js",
     "index.html": "/MovieYou/index.html",
     "static/media/search.svg": "/MovieYou/static/media/search.db964b809d21320fb503cb05f4dc8a09.svg",
-    "main.5d466b36.css.map": "/MovieYou/static/css/main.5d466b36.css.map",
-    "main.67c2682c.js.map": "/MovieYou/static/js/main.67c2682c.js.map"
+    "main.c68b833f.css.map": "/MovieYou/static/css/main.c68b833f.css.map",
+    "main.2f354d64.js.map": "/MovieYou/static/js/main.2f354d64.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d466b36.css",
-    "static/js/main.67c2682c.js"
+    "static/css/main.c68b833f.css",
+    "static/js/main.2f354d64.js"
   ]
 }
