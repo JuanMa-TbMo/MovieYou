@@ -15,6 +15,7 @@
 body {
   font-family: var(--font-roboto);
   background-color: #212426;
+  background-image: linear-gradient( #212426,rgb(115, 96, 81));
 }
 
 .app {
